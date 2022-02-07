@@ -1,6 +1,8 @@
 @import "../vendor/fonts.css";
 @import "../vendor/normalize.css";
 .page {
+  max-width: 1440px;
+  min-width: 320px;
   background-color: #000;
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
@@ -8,12 +10,26 @@
   color: #fff;
 }
 
-.page {
-  background-color: #000;
-  font-family: "Roboto", Arial, sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  color: #fff;
+.gallery {
+  width: calc(100% - 3.75rem);
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, max-content));
+  gap: 1.25rem;
+}
+.gallery__item_el_photo {
+  max-width: 100%;
+  object-fit: cover;
+}
+.gallery__item_el_block-top {
+  background-color: #FFD233;
+  max-width: 912px;
+  grid-column: 2/-1;
+}
+.gallery__item_el_block-bottom {
+  background-color: #25E197;
+  max-width: 630px;
+  grid-column: 1/3;
 }
 
 /*# sourceMappingURL=index.css.map */

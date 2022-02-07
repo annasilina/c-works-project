@@ -1,0 +1,24 @@
+.gallery {
+	width: calc(100% - 1.875rem * 2);
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(280px, max-content));
+	gap: 1.25rem;
+
+	&__item_el_photo {
+		max-width: 100%;
+		object-fit: cover;
+	}
+
+	&__item_el_block-top {
+		background-color:#FFD233;
+		max-width: 912px;
+		grid-column: 2/-1;
+	}
+
+	&__item_el_block-bottom {
+		background-color: #25E197;
+		max-width: 630px;
+		grid-column: 1/3;
+	}
+}
