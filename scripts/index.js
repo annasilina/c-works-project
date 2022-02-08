@@ -22,8 +22,8 @@ window.addEventListener('resize', function() {
 
 //функция проверки ввода email
 function validateForm(value) {
-	let indexAt = value.indexOf('@');
-	let indexDot = value.lastIndexOf('.');
+	const indexAt = value.indexOf('@');
+	const indexDot = value.lastIndexOf('.');
 
 	return !(indexAt < 1 || indexDot < indexAt);
 }
