@@ -50,6 +50,9 @@
 
 		@include preMobileStyles {
 			padding: 1.25rem;
+			box-sizing: border-box;
+			font-size: .625rem;
+			line-height: 1;
 		}
 	}
 
@@ -65,7 +68,7 @@
 		padding-left: .625rem;
 
 		@include mobileStyles {
-			padding-left: 0;
+			padding-left: .125rem;
 		}
 	}
 

@@ -15,9 +15,8 @@
   display: flex;
   align-items: center;
 }
-@media screen and (max-width: 492px) {
+@media screen and (max-width: 763px) and (min-width: 492px) {
   .logo {
-    padding-left: 0;
     padding-bottom: 4.375rem;
   }
 }
@@ -104,6 +103,9 @@
 @media screen and (max-width: 763px) {
   .form__button-submit {
     padding: 1.25rem;
+    box-sizing: border-box;
+    font-size: 0.625rem;
+    line-height: 1;
   }
 }
 .form__caption {
@@ -119,7 +121,7 @@
 }
 @media screen and (max-width: 492px) {
   .form__caption_place_header {
-    padding-left: 0;
+    padding-left: 0.125rem;
   }
 }
 .form__caption_place_footer {
@@ -166,6 +168,11 @@
 }
 .gallery__container_top {
   margin-top: 3.75rem;
+}
+@media screen and (max-width: 1040px) {
+  .gallery__container_top {
+    margin-top: 1.25rem;
+  }
 }
 .gallery__container_bottom {
   margin: 1.25rem 0 3.75rem;
@@ -283,7 +290,7 @@
 }
 @media screen and (max-width: 1040px) {
   .header__form {
-    margin-top: 23.125rem;
+    margin-top: 29.375rem;
   }
 }
 @media screen and (max-width: 492px) {
