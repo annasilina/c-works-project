@@ -19,12 +19,15 @@
 			display: flex;
 			flex-direction: column;
 			grid-template-columns: unset;
-			margin-bottom: 1.25rem;
 		}
 	}
 
+	&__container_top {
+		margin-top: 3.75rem;
+	}
+
 	&__container_bottom {
-		margin-top: 1.25rem;
+		margin: 1.25rem 0 3.75rem;
 		grid-template-columns: 1fr auto;
 	}
 

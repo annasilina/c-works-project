@@ -1,0 +1,29 @@
+.header {
+	width: calc(100% - #{$desktop-side-indent} * 2);
+	height: 76.5vh;
+	margin: 0 auto;
+	padding: 3.75rem 0;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+
+	&__title {
+		@include createIndent;
+		max-width: 395px;
+		font-weight: 400;
+		font-size: 7rem;
+		line-height: 1;
+	}
+
+	&__subtitle {
+		@include createIndent(.65rem 0 0);
+		max-width: 1030px;
+		font-weight: 400;
+		font-size: 5rem;
+		line-height: 1.14;
+	}
+
+	&__form {
+		margin-top: auto;
+	}
+}

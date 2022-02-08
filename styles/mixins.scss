@@ -1,3 +1,8 @@
+@mixin createIndent ($marginZero: 0, $paddingZero: 0) {
+	margin: $marginZero;
+	padding: $paddingZero;
+}
+
 @mixin tabletStyles {
 	@media screen and (max-width: 800px) {
 		@content

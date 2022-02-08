@@ -1,0 +1,33 @@
+.form {
+	max-width: 570px;
+
+	&__container {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__item {
+		@include createIndent;
+		width: 348px;
+		border: 0;
+		border-bottom-left-radius: $border-radius-general;
+		border-top-left-radius: $border-radius-general;
+		background-color: rgba(142, 142, 152, .2);
+	}
+
+	&__button-submit {
+		border-bottom-left-radius: 0;
+		border-top-left-radius: 0;
+		padding-left: 1rem;
+		padding-right: .875rem;
+		letter-spacing: 0.375px;
+	}
+
+	&__span-desktop {
+		padding-right: 0.625rem;
+	}
+
+	&__caption {
+		@include createIndent;
+	}
+}
