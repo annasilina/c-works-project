@@ -4,7 +4,7 @@ const applicationForms = document.querySelectorAll('.form__application');
 //функция замены текста на кнопке формы в зависимости от ширины экрана клиента
 function changeButtonValue(buttons) {
 	buttons.forEach(button => {
-		if (document.documentElement.clientWidth < 763) {
+		if (document.documentElement.clientWidth < 825) {
 			button.textContent = '✌️'
 		} else {
 			button.textContent = 'Отремонтируйте камеру ✌';

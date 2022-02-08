@@ -1,19 +1,12 @@
 .form {
 
 	&__container {
-		max-width: 570px;
 		display: flex;
-
-		@include tabletStyles {
-			max-width: 648px;
-		}
 	}
 
-	&__item_el_email {
-		@include createIndent;
-		width: 348px;
-		padding-left: 1rem;
-		color: $secondary-color;
+	&__item {
+		width: 384px;
+		@include createIndent(0, 0 0 0 1rem);
 		font-family: inherit;
 		font-weight: 400;
 		font-size: .875rem;
@@ -25,19 +18,25 @@
 		background-color: rgba(142, 142, 152, .2);
 		outline: none;
 		box-sizing: border-box;
+		color: $secondary-color;
 
 		&:hover {
 			cursor: pointer;
 			background-color: rgba(142, 142, 152, .3);
-			outline: none;
 		}
 
+		&:focus {
+			background-color: rgba(142, 142, 152, .3);
+		}
+	}
+
+	&__item_place_header {
 		@include tabletStyles {
-			width: 427px;
+			width: calc(100% - 217px);
 		}
 
-		@include mobileStyles {
-			width: 229px;
+		@include preMobileStyles {
+			width: calc(100% - 51px);
 		}
 	}
 
@@ -67,6 +66,10 @@
 		padding-top: .75rem;
 		padding-left: .625rem;
 
+		@include tabletStyles {
+			padding-top: .625rem;
+		}
+
 		@include mobileStyles {
 			padding-left: .125rem;
 		}
@@ -75,5 +78,9 @@
 	&__caption_place_footer {
 		padding-top: 1.125rem;
 		padding-left: 0;
+
+		@include mobileStyles {
+			padding-top: .625rem;
+		}
 	}
 }

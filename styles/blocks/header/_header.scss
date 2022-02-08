@@ -3,12 +3,9 @@
 	margin: 0 auto;
 	padding: 3.75rem 0;
 	box-sizing: border-box;
-	display: flex;
-	flex-direction: column;
 
 	@include tabletStyles {
 		width: calc(100% - #{$tablet-side-indent} * 2);
-		height: unset;
 		padding-bottom: 2rem;
 	}
 
