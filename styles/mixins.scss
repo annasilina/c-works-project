@@ -3,14 +3,27 @@
 	padding: $paddingZero;
 }
 
+@mixin desktopMediumStyles {
+	@media screen and (max-width: 1350px) {
+		@content;
+	}
+
+}
+
 @mixin tabletStyles {
-	@media screen and (max-width: 800px) {
-		@content
+	@media screen and (max-width: 1040px) {
+		@content;
+	}
+}
+
+@mixin preMobileStyles {
+	@media screen and (max-width: 763px) {
+		@content;
 	}
 }
 
 @mixin mobileStyles {
 	@media screen and (max-width: 492px) {
-		@content
+		@content;
 	}
 }

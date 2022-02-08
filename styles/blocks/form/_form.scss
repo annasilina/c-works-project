@@ -1,19 +1,44 @@
 .form {
 
-
 	&__container {
 		max-width: 570px;
 		display: flex;
-		flex-wrap: wrap;
+
+		@include tabletStyles {
+			max-width: 648px;
+		}
 	}
 
-	&__item {
+	&__item_el_email {
 		@include createIndent;
 		width: 348px;
+		padding-left: 1rem;
+		color: $secondary-color;
+		font-family: inherit;
+		font-weight: 400;
+		font-size: .875rem;
+		line-height: 1.71;
+		letter-spacing: .38px;
 		border: 0;
 		border-bottom-left-radius: $border-radius-general;
 		border-top-left-radius: $border-radius-general;
 		background-color: rgba(142, 142, 152, .2);
+		outline: none;
+		box-sizing: border-box;
+
+		&:hover {
+			cursor: pointer;
+			background-color: rgba(142, 142, 152, .3);
+			outline: none;
+		}
+
+		@include tabletStyles {
+			width: 427px;
+		}
+
+		@include mobileStyles {
+			width: 229px;
+		}
 	}
 
 	&__button-submit {
@@ -22,13 +47,30 @@
 		padding-left: 1rem;
 		padding-right: .875rem;
 		letter-spacing: 0.375px;
-	}
 
-	&__span-desktop {
-		padding-right: .56rem;
+		@include preMobileStyles {
+			padding: 1.25rem;
+		}
 	}
 
 	&__caption {
-		@include createIndent();
+		@include createIndent;
+		font-size: .75rem;
+		line-height: 1.5;
+		color: #47474C;
+	}
+
+	&__caption_place_header {
+		padding-top: .75rem;
+		padding-left: .625rem;
+
+		@include mobileStyles {
+			padding-left: 0;
+		}
+	}
+
+	&__caption_place_footer {
+		padding-top: 1.125rem;
+		padding-left: 0;
 	}
 }
