@@ -1,0 +1,21 @@
+.text {
+	@include createIndent;
+	color: $main-text-color;
+	font-size: 2rem;
+	line-height: 1.25;
+	font-weight: 400;
+
+	@include desktopMediumStyles {
+		font-size: 1.5rem;
+	}
+
+	@include tabletStyles {
+		font-size: 1.25rem;
+		line-height: 1.5;
+	}
+
+	@include mobileStyles {
+		font-size: .75rem;
+		line-height: 1.5;
+	}
+}

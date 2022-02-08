@@ -2,9 +2,13 @@
 @import "../styles/mixins";
 @import "../vendor/fonts.css";
 @import "../vendor/normalize.css";
+@import "../styles/blocks/page/page";
 @import "../styles/blocks/button/button";
+@import "../styles/blocks/text/text";
+@import "../styles/blocks/section-title/section-title";
 @import "../styles/blocks/logo/logo";
 @import "../styles/blocks/form/form";
-@import "../styles/blocks/page/page";
-@import "../styles/blocks/gallery/gallery";
 @import "../styles/blocks/header/header";
+@import "../styles/blocks/gallery/gallery";
+@import "../styles/blocks/lead/lead";
+
