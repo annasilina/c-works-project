@@ -35,10 +35,8 @@
   text-align: center;
 }
 
-.form {
-  max-width: 570px;
-}
 .form__container {
+  max-width: 570px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -59,7 +57,7 @@
   letter-spacing: 0.375px;
 }
 .form__span-desktop {
-  padding-right: 0.625rem;
+  padding-right: 0.56rem;
 }
 .form__caption {
   margin: 0;
@@ -140,7 +138,7 @@
 
 .header {
   width: calc(100% - 10rem * 2);
-  height: 76.5vh;
+  height: 75.2vh;
   margin: 0 auto;
   padding: 3.75rem 0;
   box-sizing: border-box;
