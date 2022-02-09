@@ -70,6 +70,12 @@
   }
 }
 
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .logo {
   padding: 0 0 3.75rem 0.375rem;
   display: flex;
@@ -380,6 +386,27 @@
   .lead__section-title {
     padding-bottom: 1.875rem;
   }
+}
+
+.price-list {
+  width: calc(100% - 10rem * 2);
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 1040px) {
+  .price-list {
+    width: calc(100% - 3.75rem * 2);
+  }
+}
+@media screen and (max-width: 492px) {
+  .price-list {
+    width: calc(100% - 1.25rem * 2);
+  }
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
 }
 
 .support {
