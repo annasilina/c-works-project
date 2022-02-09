@@ -4,10 +4,10 @@ const applicationForms = document.querySelectorAll('.form__application');
 //функция замены текста на кнопке формы в зависимости от ширины экрана клиента
 function changeButtonValue(buttons) {
 	buttons.forEach(button => {
-		if (document.documentElement.clientWidth < 825) {
+		if (document.documentElement.clientWidth < 760) {
 			button.textContent = '✌️'
 		} else {
-			button.textContent = 'Отремонтируйте камеру ✌️';
+			button.textContent = 'Отремонтируйте камеру\u00A0 ✌️';
 		}
 	});
 }
@@ -33,7 +33,7 @@ applicationForms.forEach(form => {
 	const input = form.querySelector('.form__item_el_email');
 
 	input.addEventListener('change', function() {
-		if (validateForm(input.value) && document.documentElement.clientWidth > 400) {
+		if (validateForm(input.value) && document.documentElement.clientWidth > 759) {
 			const formSubmitButton = form.querySelector('.form__button-submit');
 
 			formSubmitButton.textContent = 'Круто, спасибо за доверие!';

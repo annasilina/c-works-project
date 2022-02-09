@@ -121,7 +121,7 @@
   display: flex;
 }
 .form__item {
-  width: 384px;
+  width: 348px;
   margin: 0;
   padding: 0 0 0 1rem;
   font-family: inherit;
@@ -145,10 +145,10 @@
 }
 @media screen and (max-width: 1140px) {
   .form__item_place_header {
-    width: calc(100% - 217px);
+    width: calc(100% - 220px);
   }
 }
-@media screen and (max-width: 825px) {
+@media screen and (max-width: 760px) {
   .form__item_place_header {
     width: calc(100% - 51px);
   }
@@ -160,7 +160,7 @@
   padding-right: 0.875rem;
   letter-spacing: 0.375px;
 }
-@media screen and (max-width: 825px) {
+@media screen and (max-width: 760px) {
   .form__button-submit {
     padding: 1.25rem;
     box-sizing: border-box;
