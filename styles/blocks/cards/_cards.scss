@@ -33,6 +33,11 @@
 		display: flex;
 		flex-direction: column;
 
+		&:hover {
+			cursor: pointer;
+			background-color: #232327;
+		}
+
 		@include mobileStyles {
 			padding: 1.25rem;
 	 }
@@ -68,6 +73,12 @@
 	&__title_size_small {
 		padding: 0 0 2.375rem;
 		font-size: 1.125rem;
+		color: #EAEAF0;
+		font-weight: 500;
+
+		@include mobileStyles {
+			padding-bottom: 2.25rem;
+		}
 	}
 
 	&__text {
