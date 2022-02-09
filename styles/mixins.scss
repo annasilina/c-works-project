@@ -27,3 +27,9 @@
 		@content;
 	}
 }
+
+@mixin hoverStyles ($prime-cursor: pointer, $prime-opacity: .6, $prime-transition: opacity .3s) {
+	cursor: $prime-cursor;
+	opacity: $prime-opacity;
+	transition: $prime-transition;
+}

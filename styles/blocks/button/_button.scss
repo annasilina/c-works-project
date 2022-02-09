@@ -8,9 +8,7 @@
 	padding: .8125rem 0;
 
 	&:hover {
-		cursor: pointer;
-		opacity: .6;
-		transition: opacity .3s;
+		@include hoverStyles;
 	}
 }
 

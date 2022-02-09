@@ -25,10 +25,18 @@
 		}
 	}
 
-	&__button {
+	&__button-link {
+		display: block;
 		width: 306px;
+		padding: .8125rem 0;
+		text-align: center;
 		box-sizing: border-box;
+		font-size: .875rem;
+		line-height: 1.71;
 		letter-spacing: 0.38px;
+		border-radius: $border-radius-general;
+		background-color: $buttons-color;
+		color: $secondary-color;
 
 		@include mobileStyles {
 			width: 100%;

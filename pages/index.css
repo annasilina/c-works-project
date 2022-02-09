@@ -81,6 +81,15 @@
   padding: 0;
 }
 
+.link {
+  text-decoration: none;
+}
+.link:hover {
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.3s;
+}
+
 .logo {
   padding: 0 0 3.75rem 0.375rem;
   display: flex;
@@ -614,13 +623,21 @@
     padding-bottom: 3.2rem;
   }
 }
-.support__button {
+.support__button-link {
+  display: block;
   width: 306px;
+  padding: 0.8125rem 0;
+  text-align: center;
   box-sizing: border-box;
+  font-size: 0.875rem;
+  line-height: 1.71;
   letter-spacing: 0.38px;
+  border-radius: 0.5rem;
+  background-color: #47474C;
+  color: #fff;
 }
 @media screen and (max-width: 492px) {
-  .support__button {
+  .support__button-link {
     width: 100%;
     font-size: 0.75rem;
     line-height: 1.5;
