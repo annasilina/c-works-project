@@ -57,6 +57,9 @@
 			max-width: 644px;
 			font-size: 3.125rem;
 			line-height: 1.2;
+		}
+
+		@media screen and (max-width: 1139px) and (min-width: 493px) {
 			margin-top: 0;
 		}
 
@@ -75,7 +78,7 @@
 		}
 
 		@include mobileStyles {
-			margin-top: 16.25rem;
+			margin-top: 16.2rem;
 		}
 	}
 }

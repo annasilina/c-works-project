@@ -3,14 +3,13 @@
 	display: flex;
 	align-items: center;
 
+	@media screen and (max-width: 825px) and (min-width: 493px) {
+		padding-bottom: 4.3rem;
+	}
+
 	 @include tabletStyles {
 		 padding-left: 0;
-		 padding-bottom: 4.3rem;
 	 }
-
-	@media screen and (max-width: 763px) and (min-width: 492px){
-		padding-bottom: 4.375rem;
-	}
 
 	&__name {
 		@include createIndent;

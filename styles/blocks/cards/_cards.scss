@@ -46,7 +46,13 @@
 	}
 
 	&__item_size_small {
-		padding: 1.25rem;
+		padding: 1.16rem 1.25rem 1.25rem;
+		display: block;
+		border-radius: $border-radius-general + .125rem;
+
+		@include mobileStyles {
+			min-height: 148px;
+		}
 	}
 
 	&__tag {
@@ -79,7 +85,7 @@
 		font-weight: 500;
 
 		@include mobileStyles {
-			padding-bottom: 2.25rem;
+			padding-bottom: 2rem;
 		}
 	}
 

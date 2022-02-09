@@ -81,15 +81,14 @@
   display: flex;
   align-items: center;
 }
-@media screen and (max-width: 825px) {
+@media screen and (max-width: 825px) and (min-width: 493px) {
   .logo {
-    padding-left: 0;
     padding-bottom: 4.3rem;
   }
 }
-@media screen and (max-width: 763px) and (min-width: 492px) {
+@media screen and (max-width: 825px) {
   .logo {
-    padding-bottom: 4.375rem;
+    padding-left: 0;
   }
 }
 .logo__name {
@@ -272,6 +271,10 @@
     max-width: 644px;
     font-size: 3.125rem;
     line-height: 1.2;
+  }
+}
+@media screen and (max-width: 1139px) and (min-width: 493px) {
+  .header__subtitle {
     margin-top: 0;
   }
 }
@@ -292,7 +295,7 @@
 }
 @media screen and (max-width: 492px) {
   .header__form {
-    margin-top: 16.25rem;
+    margin-top: 16.2rem;
   }
 }
 
@@ -320,6 +323,7 @@
     display: flex;
     flex-direction: column;
     grid-template-columns: unset;
+    gap: 1.2rem;
   }
 }
 .gallery__container_top {
@@ -335,7 +339,12 @@
   grid-template-columns: 1fr auto;
 }
 .gallery__item {
-  border-radius: 12px;
+  border-radius: 4.5rem;
+}
+@media screen and (max-width: 492px) {
+  .gallery__item {
+    border-radius: 0.25rem;
+  }
 }
 .gallery__item_el_photo {
   max-width: 100%;
@@ -461,7 +470,14 @@
   }
 }
 .cards__item_size_small {
-  padding: 1.25rem;
+  padding: 1.16rem 1.25rem 1.25rem;
+  display: block;
+  border-radius: 0.625rem;
+}
+@media screen and (max-width: 492px) {
+  .cards__item_size_small {
+    min-height: 148px;
+  }
 }
 .cards__tag {
   margin: 0;
@@ -495,7 +511,7 @@
 }
 @media screen and (max-width: 492px) {
   .cards__title_size_small {
-    padding-bottom: 2.25rem;
+    padding-bottom: 2rem;
   }
 }
 .cards__text {
@@ -590,7 +606,7 @@
 @media screen and (max-width: 492px) {
   .support__title {
     padding-top: 1.875rem;
-    padding-bottom: 3.125rem;
+    padding-bottom: 3.2rem;
   }
 }
 .support__button {
@@ -603,6 +619,7 @@
     width: 100%;
     font-size: 0.75rem;
     line-height: 1.5;
+    padding: 1rem 0;
   }
 }
 .support__main-text {
@@ -618,7 +635,7 @@
 @media screen and (max-width: 492px) {
   .support__main-text {
     padding-top: 1.875rem;
-    padding-bottom: 11.25rem;
+    padding-bottom: 11rem;
   }
 }
 
@@ -640,6 +657,12 @@
 }
 .footer__logo {
   padding: 3.65rem 0 5.3rem;
+}
+@media screen and (max-width: 492px) {
+  .footer__logo {
+    padding-top: 1.875rem;
+    padding-bottom: 11.5rem;
+  }
 }
 .footer__container {
   display: flex;

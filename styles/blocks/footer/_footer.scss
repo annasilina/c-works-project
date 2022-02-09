@@ -14,6 +14,11 @@
 
 	&__logo {
 		padding: 3.65rem 0 5.3rem;
+
+		@include mobileStyles {
+			padding-top: 1.875rem;
+			padding-bottom: 11.5rem;
+		}
 	}
 
 	&__container {
