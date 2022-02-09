@@ -77,9 +77,14 @@
 }
 
 .logo {
-  padding: 0 0 3.75rem 0.375rem;
+  padding: 0 0 4.3rem 0.375rem;
   display: flex;
   align-items: center;
+}
+@media screen and (max-width: 825px) {
+  .logo {
+    padding-left: 0;
+  }
 }
 @media screen and (max-width: 763px) and (min-width: 492px) {
   .logo {
@@ -102,7 +107,7 @@
 .logo__status {
   width: 99px;
   padding: 0.25rem 0;
-  margin-left: 1.25rem;
+  margin: 0 0 0 1.25rem;
   background-color: #25E197;
   border-radius: 0.25rem;
   font-weight: 400;
@@ -266,6 +271,7 @@
     max-width: 644px;
     font-size: 3.125rem;
     line-height: 1.2;
+    margin-top: 0;
   }
 }
 @media screen and (max-width: 492px) {
@@ -407,7 +413,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, max-content));
   gap: 1.25rem;
-  padding: 3.75rem 0;
+  padding: 3.78rem 0;
   box-sizing: border-box;
 }
 @media screen and (max-width: 825px) {
@@ -504,6 +510,7 @@
   }
 }
 .cards__text_size_small {
+  max-width: 275px;
   font-size: 0.9375rem;
 }
 @media screen and (max-width: 492px) {
@@ -585,6 +592,8 @@
 }
 .support__button {
   width: 306px;
+  box-sizing: border-box;
+  letter-spacing: 0.38px;
 }
 @media screen and (max-width: 492px) {
   .support__button {
@@ -627,7 +636,7 @@
   }
 }
 .footer__logo {
-  padding: 3.75rem 0 5.25rem;
+  padding: 3.65rem 0 5.3rem;
 }
 .footer__container {
   display: flex;
@@ -640,7 +649,7 @@
 }
 .footer__copyright {
   margin: 0;
-  padding: 3.75rem 0;
+  padding: 3.675rem 0 3.75rem;
   font-weight: 400;
   font-size: 0.75rem;
   line-height: 1.5;

@@ -27,6 +27,8 @@
 
 	&__button {
 		width: 306px;
+		box-sizing: border-box;
+		letter-spacing: 0.38px;
 
 		@include mobileStyles {
 			width: 100%;

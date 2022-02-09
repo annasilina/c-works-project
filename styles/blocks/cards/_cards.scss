@@ -2,7 +2,7 @@
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(280px, max-content));
 	gap: 1.25rem;
-	padding: 3.75rem 0;
+	padding: 3.78rem 0;
 	box-sizing: border-box;
 
 	@include tabletStyles {
@@ -95,6 +95,7 @@
 	}
 
 	&__text_size_small {
+		max-width: 275px;
 		font-size: .9375rem;
 
 		@include mobileStyles {
