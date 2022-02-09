@@ -31,11 +31,11 @@
 	}
 
 	&__item_place_header {
-		@include tabletStyles {
+		@include preTabletStyles {
 			width: calc(100% - 217px);
 		}
 
-		@include preMobileStyles {
+		@include tabletStyles {
 			width: calc(100% - 51px);
 		}
 	}
@@ -47,7 +47,7 @@
 		padding-right: .875rem;
 		letter-spacing: 0.375px;
 
-		@include preMobileStyles {
+		@include tabletStyles {
 			padding: 1.25rem;
 			box-sizing: border-box;
 			font-size: .625rem;
@@ -66,7 +66,7 @@
 		padding-top: .75rem;
 		padding-left: .625rem;
 
-		@include tabletStyles {
+		@include preTabletStyles {
 			padding-top: .625rem;
 		}
 

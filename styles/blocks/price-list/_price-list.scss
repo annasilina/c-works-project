@@ -3,7 +3,7 @@
 	margin: 0 auto;
 	box-sizing: border-box;
 
-	@include tabletStyles {
+	@include preTabletStyles {
 		width: calc(100% - #{$tablet-side-indent} * 2);
 	}
 

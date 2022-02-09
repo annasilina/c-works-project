@@ -1,6 +1,7 @@
-.lead {
+.guarantee {
 	width: calc(100% - #{$desktop-side-indent} * 2);
 	margin: 0 auto;
+	box-sizing: border-box;
 
 	@include preTabletStyles {
 		width: calc(100% - #{$tablet-side-indent} * 2);
@@ -10,20 +11,7 @@
 		width: calc(100% - #{$mobile-side-indent} * 2);
 	}
 
-	&__main-text {
-		padding: 3.75rem 0;
-
-		@include mobileStyles {
-			padding: 0 0 1.25rem;
-		}
-	}
-
 	&__title {
-		padding-bottom: 3.75rem;
-		max-width: 537px;
-
-		@include mobileStyles {
-			padding-bottom: 1.875rem;
-		}
+		padding-top: 3.75rem;
 	}
 }

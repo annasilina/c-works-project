@@ -10,7 +10,7 @@
 		font-size: 1.5rem;
 	}
 
-	@include tabletStyles {
+	@include preTabletStyles {
 		max-width: 684px;
 		font-size: 1.25rem;
 		line-height: 1.5;

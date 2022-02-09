@@ -2,7 +2,7 @@
 	width: calc(100% - 1.875rem * 2);
 	margin: auto;
 
-	@include tabletStyles {
+	@include preTabletStyles {
 		width: calc(100% - #{$tablet-side-indent} * 2);
 	}
 
@@ -25,7 +25,7 @@
 	&__container_top {
 		margin-top: 3.75rem;
 
-		@include tabletStyles {
+		@include preTabletStyles {
 			margin-top: 1.25rem;
 		}
 	}

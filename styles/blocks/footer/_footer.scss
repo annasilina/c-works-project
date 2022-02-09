@@ -4,7 +4,7 @@
 	box-sizing: border-box;
 	border-top: 2px solid #151515;
 
-	@include tabletStyles {
+	@include preTabletStyles {
 		width: calc(100% - #{$tablet-side-indent} * 2);
 	}
 
@@ -20,7 +20,7 @@
 		display: flex;
 		justify-content: space-between;
 
-		@include tabletStyles {
+		@include preTabletStyles {
 			flex-direction: column;
 		}
 	}
@@ -33,7 +33,7 @@
 		color: #47474C;
 		align-self: end;
 
-		@include tabletStyles {
+		@include preTabletStyles {
 			align-self: start;
 		}
 

@@ -3,7 +3,7 @@
 	margin: 0 auto;
 	box-sizing: border-box;
 
-	@include tabletStyles {
+	@include preTabletStyles {
 		width: calc(100% - #{$tablet-side-indent} * 2);
 	}
 
@@ -15,7 +15,7 @@
 		padding-top: 3.75rem;
 		padding-bottom: 5.625rem;
 
-		@include tabletStyles {
+		@include preTabletStyles {
 			padding-bottom: 5rem;
 		}
 
@@ -39,7 +39,7 @@
 		padding-top: 3.125rem;
 		padding-bottom: 15rem;
 
-		@include tabletStyles {
+		@include preTabletStyles {
 			padding-top: 2.5rem;
 			padding-bottom: 13.125rem;
 		}
