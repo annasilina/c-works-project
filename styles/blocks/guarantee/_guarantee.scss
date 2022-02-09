@@ -13,5 +13,9 @@
 
 	&__title {
 		padding-top: 3.75rem;
+
+		@include mobileStyles {
+			padding-top: 1.875rem;
+		}
 	}
 }

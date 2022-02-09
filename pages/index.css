@@ -537,6 +537,11 @@
 .guarantee__title {
   padding-top: 3.75rem;
 }
+@media screen and (max-width: 492px) {
+  .guarantee__title {
+    padding-top: 1.875rem;
+  }
+}
 
 .support {
   width: calc(100% - 10rem * 2);
@@ -564,7 +569,7 @@
 }
 @media screen and (max-width: 492px) {
   .support__title {
-    padding-top: 2.5rem;
+    padding-top: 1.875rem;
     padding-bottom: 3.125rem;
   }
 }
