@@ -31,4 +31,4 @@ _____
 - Экраны планшетов (768px)
 - Мониторы ПК (1440px)
 ----
-Проект выложен на GitHub Pages - 
+Проект выложен на GitHub Pages - https://annasilina.github.io/c-works-project/
