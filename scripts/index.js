@@ -7,7 +7,7 @@ function changeButtonValue(buttons) {
 		if (document.documentElement.clientWidth < 825) {
 			button.textContent = '✌️'
 		} else {
-			button.textContent = 'Отремонтируйте камеру ' + '✌️';
+			button.textContent = 'Отремонтируйте камеру ✌️';
 		}
 	});
 }
