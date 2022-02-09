@@ -1,10 +1,11 @@
 .logo {
-	padding: 0 0 4.3rem .375rem;
+	padding: 0 0 3.75rem .375rem;
 	display: flex;
 	align-items: center;
 
 	 @include tabletStyles {
 		 padding-left: 0;
+		 padding-bottom: 4.3rem;
 	 }
 
 	@media screen and (max-width: 763px) and (min-width: 492px){

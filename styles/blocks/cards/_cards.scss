@@ -2,11 +2,13 @@
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(280px, max-content));
 	gap: 1.25rem;
-	padding: 3.78rem 0;
+	padding: 3.75rem 0;
 	box-sizing: border-box;
 
 	@include tabletStyles {
 		grid-template-columns: 100%;
+		padding-top: 3.78rem;
+		padding-bottom: 3.78rem;
 	}
 
 	@include mobileStyles {

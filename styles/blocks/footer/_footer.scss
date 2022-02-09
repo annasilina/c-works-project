@@ -26,7 +26,7 @@
 	}
 
 	&__copyright {
-		@include createIndent(0, 3.675rem 0 3.75rem);
+		@include createIndent(0, 4.2rem 0 3rem);
 		font-weight: 400;
 		font-size: .75rem;
 		line-height: 1.5;
@@ -35,6 +35,7 @@
 
 		@include preTabletStyles {
 			align-self: start;
+			padding-top: 3.675rem;
 		}
 
 		@include mobileStyles {
