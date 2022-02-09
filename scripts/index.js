@@ -1,5 +1,5 @@
 const submitButtons = document.querySelectorAll('.form__button-submit');
-const applicationForms = document.querySelectorAll('.form__application');
+const applicationForms = document.querySelectorAll('.form_type_application');
 
 //функция замены текста на кнопке формы в зависимости от ширины экрана клиента
 function changeButtonValue(buttons) {
