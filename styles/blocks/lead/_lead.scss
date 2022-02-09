@@ -11,15 +11,9 @@
 	}
 
 	&__main-text {
-		max-width: 1120px;
 		padding: 3.75rem 0;
 
-		@include tabletStyles {
-			max-width: 684px;
-		}
-
 		@include mobileStyles {
-			max-width: 280px;
 			padding: 0 0 1.25rem;
 		}
 	}
