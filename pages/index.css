@@ -130,8 +130,7 @@
   line-height: 1.71;
   letter-spacing: 0.38px;
   border: 0;
-  border-bottom-left-radius: 0.5rem;
-  border-top-left-radius: 0.5rem;
+  border-radius: 0.5rem 0 0 0.5rem;
   background-color: rgba(142, 142, 152, 0.2);
   outline: none;
   box-sizing: border-box;

@@ -13,8 +13,7 @@
 		line-height: 1.71;
 		letter-spacing: .38px;
 		border: 0;
-		border-bottom-left-radius: $border-radius-general;
-		border-top-left-radius: $border-radius-general;
+		border-radius: $border-radius-general 0 0 $border-radius-general;
 		background-color: rgba(142, 142, 152, .2);
 		outline: none;
 		box-sizing: border-box;
