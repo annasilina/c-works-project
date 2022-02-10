@@ -488,7 +488,7 @@
   background-color: #232327;
 }
 .cards__item_size_small {
-  padding: 1.16rem 1.25rem 1.25rem;
+  padding: 1.25rem;
   border-radius: 0.625rem;
 }
 @media screen and (max-width: 492px) {
