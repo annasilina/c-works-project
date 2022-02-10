@@ -1,0 +1,50 @@
+.footer {
+	width: calc(100% - #{$desktop-side-indent} * 2);
+	margin: 0 auto;
+	box-sizing: border-box;
+	border-top: 2px solid #151515;
+
+	@include preTabletStyles {
+		width: calc(100% - #{$tablet-side-indent} * 2);
+	}
+
+	@include mobileStyles {
+		width: calc(100% - #{$mobile-side-indent} * 2);
+	}
+
+	&__logo {
+		padding: 3.65rem 0 5.3rem;
+
+		@include mobileStyles {
+			padding-top: 1.875rem;
+			padding-bottom: 11.5rem;
+		}
+	}
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+
+		@include preTabletStyles {
+			flex-direction: column;
+		}
+	}
+
+	&__copyright {
+		@include createIndent(0, 4.2rem 0 3rem);
+		font-weight: 400;
+		font-size: .75rem;
+		line-height: 1.5;
+		color: #47474C;
+		align-self: end;
+
+		@include preTabletStyles {
+			align-self: start;
+			padding-top: 3.675rem;
+		}
+
+		@include mobileStyles {
+			padding: 2.5rem 0 1.25rem;
+		}
+	}
+}

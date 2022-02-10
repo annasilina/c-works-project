@@ -1,0 +1,131 @@
+.cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(280px, max-content));
+	gap: 1.25rem;
+	padding: 3.75rem 0;
+	box-sizing: border-box;
+
+	@include tabletStyles {
+		grid-template-columns: 100%;
+		padding-top: 3.78rem;
+		padding-bottom: 3.78rem;
+	}
+
+	@include mobileStyles {
+		padding: 2.5rem 0;
+	}
+
+	&_size_small {
+		grid-template-columns: repeat(auto-fit, minmax(190px, max-content));
+
+		@include preTabletStyles {
+			grid-template-columns: repeat(2, auto);
+		}
+
+		@include mobileStyles {
+			grid-template-columns: 100%;
+		}
+	}
+
+	&__item-container {
+		display: flex;
+	}
+
+	&__item {
+		@include createIndent(0, 2.5rem);
+		box-sizing: border-box;
+		background-color: #1C1C1E;
+		border-radius: $border-radius-general * 2;
+		width: 100%;
+
+
+		@include mobileStyles {
+			padding: 1.25rem;
+	 }
+
+		@include hoverStyles(0, unset, background-color .3s) {
+			background-color: #232327;
+		}
+	}
+
+	&__item_size_small {
+		padding: 1.16rem 1.25rem 1.25rem;
+		border-radius: $border-radius-general + .125rem;
+
+		@include mobileStyles {
+			min-height: 148px;
+		}
+	}
+
+	&__tag {
+		@include createIndent();
+		font-weight: 400;
+		color: $main-text-color;
+		font-size: 1.125rem;
+		line-height: 1;
+	}
+
+	&__title {
+		@include createIndent(0, 1.25rem 0 2.5rem);
+		font-weight: 400;
+		color: $secondary-color;
+		font-size: 2rem;
+		line-height: 1;
+
+		@include mobileStyles {
+			padding-top: .625rem;
+			padding-bottom: 1.75rem;
+			font-size: 1.5rem;
+			line-height: 1.3;
+		}
+	}
+
+	&__title_size_small {
+		padding: 0 0 2.375rem;
+		font-size: 1.125rem;
+		color: #EAEAF0;
+		font-weight: 500;
+
+		@include mobileStyles {
+			padding-bottom: 2rem;
+		}
+	}
+
+	&__text {
+		@include createIndent;
+		font-weight: 400;
+		color: $main-text-color;
+		font-size: 2rem;
+		line-height: 1.25;
+
+		@include mobileStyles {
+			font-size: .75rem;
+			line-height: 1.5;
+		}
+	}
+
+	&__text_size_small {
+		max-width: 275px;
+		font-size: .9375rem;
+
+		@include mobileStyles {
+			font-size: .75rem;
+			line-height: 1.5;
+		}
+	}
+
+	&__price {
+		@include createIndent(0, 2.5rem 0 0);
+		color: $third-color;
+		font-weight: 400;
+		font-size: .875rem;
+		line-height: 1;
+		margin-top: auto;
+
+		@include mobileStyles {
+			padding-top: 6.25rem;
+			font-size: .75rem;
+			line-height: 1.5;
+		}
+	}
+}

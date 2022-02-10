@@ -1,0 +1,36 @@
+@mixin createIndent ($marginZero: 0, $paddingZero: 0) {
+	margin: $marginZero;
+	padding: $paddingZero;
+}
+
+@mixin desktopMediumStyles {
+	@media screen and (max-width: 1350px) {
+		@content;
+	}
+
+}
+
+@mixin preTabletStyles {
+	@media screen and (max-width: 1140px) {
+		@content;
+	}
+}
+
+@mixin tabletStyles {
+	@media screen and (max-width: 825px) {
+		@content;
+	}
+}
+
+@mixin mobileStyles {
+	@media screen and (max-width: 492px) {
+		@content;
+	}
+}
+
+@mixin hoverStyles ($prime-cursor: pointer, $prime-opacity: .6, $prime-transition: opacity .3s) {
+	cursor: $prime-cursor;
+	opacity: $prime-opacity;
+	transition: $prime-transition;
+	@content;
+}

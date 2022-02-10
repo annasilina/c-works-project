@@ -1,0 +1,16 @@
+.button {
+	border: 0;
+	border-radius: $border-radius-general;
+	background-color: $buttons-color;
+	font-size: .875rem;
+	line-height: 1.71;
+	color: $secondary-color;
+	padding: .8125rem 0;
+
+	&:hover {
+		@include hoverStyles;
+	}
+}
+
+
+

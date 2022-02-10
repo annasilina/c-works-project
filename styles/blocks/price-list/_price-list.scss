@@ -1,0 +1,13 @@
+.price-list {
+	width: calc(100% - #{$desktop-side-indent} * 2);
+	margin: 0 auto;
+	box-sizing: border-box;
+
+	@include preTabletStyles {
+		width: calc(100% - #{$tablet-side-indent} * 2);
+	}
+
+	@include mobileStyles {
+		width: calc(100% - #{$mobile-side-indent} * 2);
+	}
+}

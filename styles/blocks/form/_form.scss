@@ -1,0 +1,85 @@
+.form {
+
+	&__container {
+		display: flex;
+	}
+
+	&__item {
+		width: 348px;
+		@include createIndent(0, 0 0 0 1rem);
+		font-family: inherit;
+		font-weight: 400;
+		font-size: .875rem;
+		line-height: 1.71;
+		letter-spacing: .38px;
+		border: 0;
+		border-radius: $border-radius-general 0 0 $border-radius-general;
+		background-color: rgba(142, 142, 152, .2);
+		outline: none;
+		box-sizing: border-box;
+		color: $secondary-color;
+
+		&:hover {
+			cursor: pointer;
+			background-color: rgba(142, 142, 152, .3);
+		}
+
+		&:focus {
+			background-color: rgba(142, 142, 152, .3);
+		}
+	}
+
+	&__item_place_header {
+		@include preTabletStyles {
+			width: calc(100% - 220px);
+		}
+
+		@media screen and (max-width: 760px) {
+			width: calc(100% - 51px);
+		}
+	}
+
+	&__button-submit {
+		border-bottom-left-radius: 0;
+		border-top-left-radius: 0;
+		padding-left: 1rem;
+		padding-right: .875rem;
+		letter-spacing: 0.375px;
+
+		@media screen and (max-width: 760px) {
+			padding: 1.25rem;
+			box-sizing: border-box;
+			font-size: .625rem;
+			line-height: 1;
+		}
+	}
+
+	&__caption {
+		@include createIndent;
+		font-size: .75rem;
+		line-height: 1.5;
+		color: #47474C;
+	}
+
+	&__caption_place_header {
+		padding-top: .75rem;
+		padding-left: .625rem;
+
+		@include preTabletStyles {
+			padding-top: .625rem;
+		}
+
+		@include mobileStyles {
+			padding-left: .125rem;
+		}
+	}
+
+	&__caption_place_footer {
+		padding-top: 1.125rem;
+		padding-left: 0;
+
+		@include mobileStyles {
+			padding-top: .625rem;
+		}
+	}
+}

@@ -14,91 +14,110 @@
 	<header class="header">
 		<div class="logo">
 			<p class="logo__name">C-Works</p>
-			<div class="logo__status">мы открылись</div>
+			<p class="logo__status">мы открылись</p>
 		</div>
 		<h1 class="header__title">Ремонт</h1>
 		<h2 class="header__subtitle">Плёночных фотоаппаратов</h2>
-		<div class="form">
-			<form class="form__application">
+		<form class="form form_type_application header__form">
 				<div class="form__container">
-					<input type="email" name="user-email" class="form__item form__item_el_email">
-					<button type="submit" class="form__button-submit button">Отремонтируйте камеру ✌</button>
-					<p class="form__caption">Напишите нам и мы свяжемся с вами.</p>
+					<input type="email" name="user-email" class="form__item form__item_el_email form__item_place_header"
+								 autocomplete="off" required>
+					<button type="submit" class="form__button-submit button"></button>
 				</div>
-			</form>
-		</div>
+			<p class="form__caption form__caption_place_header">Напишите нам и мы свяжемся с вами.</p>
+		</form>
 	</header>
 	<main class="content">
 		<section class="gallery">
-			<img class="gallery__item gallery__item_el_photo-top" src="images/gallery-photo-1.jpg" alt="фото камеры">
-			<div class="gallery__item gallery__item_el_block-top"></div>
-			<img class="gallery__item gallery__item_el_photo-bottom" src="images/gallery-photo-2.jpg" alt="фото камеры">>
-			<div class="gallery__item gallery__item_el_block-bottom"></div>
+			<div class="gallery__container gallery__container_height_low">
+				<img class="gallery__item gallery__item_el_photo" src="images/gallery-photo-1.jpg" alt="фото камеры">
+				<div class="gallery__item gallery__item_el_block-low"></div>
+			</div>
+			<div class="gallery__container gallery__container_height_high">
+				<div class="gallery__item gallery__item_el_block-high"></div>
+				<img class="gallery__item gallery__item_el_photo" src="images/gallery-photo-2.jpg" alt="фото камеры">
+			</div>
 		</section>
 		<section class="lead">
-			<p class="lead__main-text text">Мы ремонтируем плёночные фотоаппараты. Полносстью механические камеры,
-				относительно	современные камеры на электронике, проводим CLA камер, принимаем в зачёт оплаты сломаные тушки и объективы.</p>
-			<h2 class="section-title lead__section-title">Для энтузиастов, от энтузиастов 👈</h2>
+			<p class="lead__main-text text">Мы ремонтируем плёночные фотоаппараты. Полностью механические камеры,
+				относительно&nbsp;современные камеры на&nbsp;электронике, проводим CLA камер, принимаем в зачёт оплаты сломаные
+				тушки	и&nbsp;объективы.</p>
+			<h2 class="section-title lead__title">Для энтузиастов, от энтузиастов 👈</h2>
 		</section>
 		<section class="price-list">
 			<ul class="cards list">
-				<li class="cards__item">
-					<p class="cards__tag">CLA</p>
-					<h2 class="cards__title">Чистка камер.</h2>
-					<p class="cards__text">Замена уплотнителей, дампфера зеркала, смазка механизмов, юстировка.</p>
-					<p class="cards__price">от 2000₽</p>
+				<li class="cards__item-container">
+					<a href="#" target="_blank" class="cards__item link">
+						<p class="cards__tag">CLA</p>
+						<h2 class="cards__title">Чистка камер.</h2>
+						<p class="cards__text">Замена уплотнителей, дампфера зеркала, смазка механизмов, юстировка.</p>
+						<p class="cards__price">от 2000₽</p>
+					</a>
 				</li>
-				<li class="cards__item">
-					<p class="cards__tag">Ремонт</p>
-					<h2 class="cards__title">Ремонт камер.</h2>
-					<p class="cards__text">Ремонт механизмов, замена деталей, пайка электроники, адаптация питания.</p>
-					<p class="cards__price">от 2500₽</p>
+				<li class="cards__item-container">
+					<a href="#" target="_blank" class="cards__item link">
+						<p class="cards__tag">Ремонт</p>
+						<h2 class="cards__title">Ремонт камер.</h2>
+						<p class="cards__text">Ремонт механизмов, замена деталей, пайка электроники, адаптация питания.</p>
+						<p class="cards__price">от 2500₽</p>
+					</a>
 				</li>
 			</ul>
 		</section>
 		<section class="guarantee">
-			<h2 class="section-title">Полная гарантия ⚡️</h2>
+			<h2 class="section-title guarantee__title">Полная гарантия ⚡️</h2>
 			<ul class="cards cards_size_small list">
-				<li class="cards__item cards__item_size_small">
-					<h2 class="cards__title cards__title_size_small">CLA</h2>
-					<p class="cards__text cards__text_size_small">После CLA мы даем гарантию на 1 год, в случае беды мы заново обслужим вашу камеру.</p>
+				<li class="cards__item-container">
+					<a href="#" target="_blank" class="cards__item cards__item_size_small link">
+						<h2 class="cards__title cards__title_size_small">CLA</h2>
+						<p class="cards__text cards__text_size_small">После CLA мы даем гарантию на 1 год, в случае беды мы заново
+							обслужим вашу камеру.</p>
+					</a>
 				</li>
-				<li class="cards__item cards__item_size_small">
-					<h2 class="cards__title cards__title_size_small">Ремонт</h2>
-					<p class="cards__text cards__text_size_small">После ремонта мы даем гарантию на 3 месяца или 6 месяцев.</p>
+				<li class="cards__item-container">
+					<a href="#" target="_blank" class="cards__item cards__item_size_small link">
+						<h2 class="cards__title cards__title_size_small">Ремонт</h2>
+						<p class="cards__text cards__text_size_small">После ремонта мы даем гарантию на 3 месяца или 6 месяцев.</p>
+					</a>
 				</li>
-				<li class="cards__item cards__item_size_small">
-					<h2 class="cards__title cards__title_size_small">Пайка и адаптация</h2>
-					<p class="cards__text cards__text_size_small">После пайки и адаптации питания мы даем гарантию
-						на 1 год.</p>
+				<li class="cards__item-container">
+					<a href="#" target="_blank" class="cards__item cards__item_size_small link">
+						<h2 class="cards__title cards__title_size_small">Пайка и адаптация</h2>
+						<p class="cards__text cards__text_size_small">После пайки и адаптации питания мы даем гарантию
+							на 1 год.</p>
+					</a>
 				</li>
-				<li class="cards__item cards__item_size_small">
-					<h2 class="cards__title cards__title_size_small">Осмотр</h2>
-					<p class="cards__text cards__text_size_small">Осмотр камеры — бесплатен, если мы что-то сломаем, поменяем деталь сами.</p>
+				<li class="cards__item-container">
+					<a href="#" target="_blank" class="cards__item cards__item_size_small link">
+						<h2 class="cards__title cards__title_size_small">Осмотр</h2>
+						<p class="cards__text cards__text_size_small">Осмотр камеры — бесплатен, если&nbsp;мы что-то сломаем,
+							поменяем деталь сами.</p>
+					</a>
 				</li>
 			</ul>
 		</section>
 		<section class="support">
-			<h2 class="section-title">Поддержите нас 🤝</h2>
-			<button type="button" class="support__button button">Напишите нам если хотите помочь!</button>
+			<h2 class="section-title support__title">Поддержите нас 🤝</h2>
+			<a href="#" target="_blank" class="support__button-link link">Напишите нам если хотите помочь!</a>
 			<p class="support__main-text text">Ещё вы сможете безвозмездно поддержать нас на Patreon, пока мы ещё создали аккаунт, но как только это сделаем, сообщим вам.</p>
 		</section>
 	</main>
 	<footer class="footer">
-		<div class="logo">
+		<div class="logo footer__logo">
 			<p class="logo__name">C-Works</p>
-			<div class="logo__status">мы открылись</div>
+			<p class="logo__status">мы открылись</p>
 		</div>
-		<div class="form">
-			<form class="form__application">
+		<div class="footer__container">
+		<form class="form form_type_application footer__form" name="application">
 				<div class="form__container">
-					<input type="email" name="user-email" class="form__item form__item_el_email">
-					<button type="submit" class="form__button-submit button">Отремонтируйте камеру ✌</button>
-					<p class="form__caption form__caption_place_footer">Напишите нам и мы свяжемся с вами.</p>
+					<input type="email" name="user-email" class="form__item form__item_el_email"
+								 autocomplete="off" required>
+					<button type="submit" class="form__button-submit button"></button>
 				</div>
-			</form>
+			<p class="form__caption form__caption_place_footer">Напишите нам и мы свяжемся с вами.</p>
+		</form>
+		<p class="footer__copyright">&copy; C-Works, 2021.</p>
 		</div>
-		<p class="copyright">&copy;C-Works, 2021.</p>
 	</footer>
 <script src="scripts/index.js"></script>
 </body>
