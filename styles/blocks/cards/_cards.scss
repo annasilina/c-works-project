@@ -38,13 +38,14 @@
 		border-radius: $border-radius-general * 2;
 		width: 100%;
 
-
 		@include mobileStyles {
 			padding: 1.25rem;
 	 }
 
-		@include hoverStyles(0, unset, background-color .3s) {
-			background-color: #232327;
+		&:hover {
+			@include hoverStyles(0, unset, background-color .3s) {
+				background-color: #232327;
+			}
 		}
 	}
 
