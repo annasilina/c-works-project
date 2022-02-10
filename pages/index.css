@@ -465,14 +465,20 @@
     grid-template-columns: 100%;
   }
 }
+.cards__item-container {
+  display: flex;
+}
 .cards__item {
   margin: 0;
   padding: 2.5rem;
   box-sizing: border-box;
   background-color: #1C1C1E;
   border-radius: 1rem;
-  display: flex;
-  flex-direction: column;
+  width: 100%;
+  cursor: 0;
+  opacity: unset;
+  transition: background-color 0.3s;
+  background-color: #232327;
 }
 @media screen and (max-width: 492px) {
   .cards__item {
@@ -487,11 +493,6 @@
   .cards__item_size_small {
     min-height: 148px;
   }
-}
-.cards__link:hover {
-  cursor: pointer;
-  background-color: #232327;
-  transition: background-color 0.3s;
 }
 .cards__tag {
   margin: 0;

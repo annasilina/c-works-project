@@ -27,17 +27,25 @@
 		}
 	}
 
+	&__item-container {
+		display: flex;
+	}
+
 	&__item {
 		@include createIndent(0, 2.5rem);
 		box-sizing: border-box;
 		background-color: #1C1C1E;
 		border-radius: $border-radius-general * 2;
-		display: flex;
-		flex-direction: column;
+		width: 100%;
+
 
 		@include mobileStyles {
 			padding: 1.25rem;
 	 }
+
+		@include hoverStyles(0, unset, background-color .3s) {
+			background-color: #232327;
+		}
 	}
 
 	&__item_size_small {
@@ -46,14 +54,6 @@
 
 		@include mobileStyles {
 			min-height: 148px;
-		}
-	}
-
-	&__link {
-		&:hover {
-			cursor: pointer;
-			background-color: #232327;
-			transition: background-color .3s;
 		}
 	}
 

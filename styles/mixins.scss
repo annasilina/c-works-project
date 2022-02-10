@@ -32,4 +32,5 @@
 	cursor: $prime-cursor;
 	opacity: $prime-opacity;
 	transition: $prime-transition;
+	@content;
 }
